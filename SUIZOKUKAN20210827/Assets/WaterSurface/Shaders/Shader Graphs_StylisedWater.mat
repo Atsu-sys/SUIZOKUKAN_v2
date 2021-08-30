@@ -46,7 +46,7 @@ Material:
     - _FlowStrength: 0.0075
     - _FoamDistance: 0.75
     - _Opacity: 14.19
-    - _Size: 2
+    - _Size: 0.45
     m_Colors:
     - _DarkFoamColor: {r: 0.29125133, g: 0.41669914, b: 0.5188679, a: 1}
     - _LightFoamColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}

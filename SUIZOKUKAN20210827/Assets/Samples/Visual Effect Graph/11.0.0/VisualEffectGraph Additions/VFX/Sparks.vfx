@@ -8068,9 +8068,7 @@ MonoBehaviour:
   m_Tooltip: 
   m_Nodes:
   - m_Id: 0
-    linkedSlots:
-    - outputSlot: {fileID: 8926484042661615030}
-      inputSlot: {fileID: 0}
+    linkedSlots: []
     position: {x: 456, y: 1500}
     expandedSlots: []
     expanded: 0
