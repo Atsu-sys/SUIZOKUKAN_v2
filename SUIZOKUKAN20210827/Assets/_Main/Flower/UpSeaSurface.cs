@@ -15,6 +15,6 @@ public class UpSeaSurface : MonoBehaviour
     void Update()
     {
         if(this.transform.position.y <= pos)
-        this.transform.position += new Vector3(0, 0.005f, 0);
+        this.transform.position += new Vector3(0, 0.002f, 0);
     }
 }
