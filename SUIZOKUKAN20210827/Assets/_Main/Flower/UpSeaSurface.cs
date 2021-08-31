@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UpSeaSurface : MonoBehaviour
-{
+{    
     public float pos = 200.0f;
     // Start is called before the first frame update
     void Start()
     {
-        
+           
     }
 
     // Update is called once per frame
@@ -16,5 +16,5 @@ public class UpSeaSurface : MonoBehaviour
     {
         if(this.transform.position.y <= pos)
         this.transform.position += new Vector3(0, 0.002f, 0);
-    }
+    }    
 }
