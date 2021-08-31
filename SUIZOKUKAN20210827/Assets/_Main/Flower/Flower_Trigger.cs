@@ -15,12 +15,15 @@ public class Flower_Trigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        GetComponent<VisualEffect>().enabled = true;
-        GetComponent<AudioSource>().enabled = true;
-        GetComponent<AudioSource>().enabled = true;
+        if (other.CompareTag("Player"))
+        {
+            GetComponent<VisualEffect>().enabled = true;
+            GetComponent<AudioSource>().enabled = true;
+            GetComponent<AudioSource>().enabled = true;
 
-        child.GetComponent<Light>().enabled = true;
-        
-        a.PlayOneShot(b1);
+            child.GetComponent<Light>().enabled = true;
+
+            a.PlayOneShot(b1);
+        }        
     }
 }

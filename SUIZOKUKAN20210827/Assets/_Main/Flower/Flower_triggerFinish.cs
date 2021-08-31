@@ -15,10 +15,13 @@ public class Flower_triggerFinish : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Underwater.GetComponent<UpSeaSurface>().enabled = true;
-        Underwater.GetComponent<BGM>().PlaySoundSea();
+        if(other.CompareTag("Player"))
+        {
+            Underwater.GetComponent<UpSeaSurface>().enabled = true;
+            Underwater.GetComponent<BGM>().PlaySoundSea();
 
-        Invoke(nameof(setactive), 10.0f);        
+            Invoke(nameof(setactive), 10.0f);
+        }       
     }
 
     void setactive()
